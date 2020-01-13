@@ -3,55 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.min.css" rel="stylesheet">
     <title>yoga</title>
 </head>
 <body>
     <header>
         <div class="page-header">
-            <div class="main-nav">
-                <button class="main-nav__button">Меню</button>
-                <ul class="main-nav__list">
-                    <li class="main-nav__item">
-                        <a href="#" class="main-nav__item-link">Первый пункт</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="#" class="main-nav__item-link">Второй пункт</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="#" class="main-nav__item-link">Третий пункт</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="#" class="main-nav__item-link">Четвертый пункт</a>
-                    </li>
-                </ul>
-            </div>
+            <nav class="main-nav main-nav--closed" id="navigation">
+                <button class="main-nav__button" id="navigationToggler"><span class="main-nav__button-custom"></span>Меню</button>
+                <div class="main-nav__wrapper">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__item-link">Первый пункт</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__item-link">Второй пункт</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__item-link">Третий пункт</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__item-link">Четвертый пункт</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
 
             <div class="header-contact">
                 <p class="header-number">8 (812) 690-10-10</p>
             </div>
 
             <div class="header-logo">
-                <img class="header-logo--relax" src="img/logo-relax.png" width="233" height="12" alt="Почувствуй расслабление в своем теле">
+                <img class="header-logo--relax" src="img/relax-mobile.svg"  alt="Почувствуй расслабление в своем теле">
                 <h1 class="header-logo--main">YOGA</h1>
             </div>
 
             <div class="header-demo">
-                <a class="demo-link" href="#">
-                    <span class="demo-rectangle"></span>
-                    <span class="demo-text">Запишитесь на бесплатное пробное занятие</span>
-                </a>
+                <a class="demo-link" href="#">Запишитесь на бесплатное пробное занятие</a>
             </div>
 
-            <div class="header-socials">
+            <div class="header-socials tablet">
                 <a class="header__vk-link" href="#">Вконтакте</a>
                 <a class="header__twitter-link" href="#">Твиттер</a>
                 <a class="header__fb-link" href="#">Фейсбук</a>
             </div>
 
-            <div class="header-location">
+            <div class="header-location tablet">
                 <span class="location">Санкт-Петербург</span> 
             </div>
-        </div>
+        </nav>
     </header>
 
     <main>
@@ -136,11 +136,11 @@
         <section class="team">
             <h2 class="team__title">Наша команда</h2>
             <ul class="team__list">
-                <li class="team__user">
+                <blockquotes class="team__user">
                     <div class="team__info">
                         <img class="team__avatar" src="img/avatar-1" width="82" height="82" alt="Сережа Попов">
                         <div class="team__username">
-                            <p class="team__name">Инструктор<br>Сережа Попов</p>
+                            <cite class="team__name">Инструктор<br>Сережа Попов</cite>
                             <p class="team__specialization">Хатха-йога</p>
                         </div>
                         <div class="team__socials">
@@ -152,8 +152,8 @@
                     <p class="team__user-description">
                         Практикует с 2011 года, является сертифицированным инструктором по флоу- йоге. Большой опыт преподавания йоги для начинающих и продолжающих. Обучался в Индии (International Association of Yoga: classical yoga, master of principles yoga therapy), Непале (опыт медитативных и дыхательных техник, проживание в Ашраме), Москва (Аштанга йога центр 108 А.Константинова), Московский центр классической йоги Виктора Бойко. Сертифицированный инструктор по фитнесу и йоге (БГУФК), по массажу (Оздоровительный Витал – центр №401). Организатор и участник многочисленных конвенций и семинаров по йоге, медитативным техникам и здоровому питанию.
                     </p>
-                </li>
-            </ul>
+                </blockquotes>
+            </div>
         </section>
 
         <section class="reviews">
@@ -186,15 +186,65 @@
             </div>
         </section>
 
-        <section class="registration">
-            <h2 class="registration__title">Запишитесь на бесплатное пробное занятие</h2>
-            <form class="registration__form" action="" method="POST">
-                <input type="text" name="name" id="name" class="registration__input" placeholder="Ваше имя">
-                <input type="tel" name="tel" id="tel" class="registration__input" placeholder="Ваш телефон">
-                <button type="submit" class="registration__submit">Оставить заявку</button>
-            </form>
-        </section>
-
+        
     </main>
+
+    <footer>
+        <div class="page-footer">
+            <div class="footer__feedback">
+                <div class="footer__location">
+                    <h3 class="footer__title">Адрес:</h3>
+                    <p class="footer__adress">Москвоский проспект, 22</p>
+                </div>
+                <div class="footer__schedule">
+                    <h3 class="footer__title">График работы:</h3>
+                    <p class="footer__timetable">Пн-Вс с 11: до 21:00</p>
+                </div>
+                <div class="footer__contact">
+                    <h3 class="footer__title">Телефон:</h3>
+                    <p class="footer__phone">8 (812) 690-10-10</p>
+                </div>
+                <div class="footer__write">
+                    <h3 class="footer__title">Email:</h3>
+                    <p class="footer__email">yogaspb@gmail.com</p>
+                </div>
+                <div class="footer__socials">
+                    <a href="#" class="footer__link-vk">Вконтакте</a>
+                    <a href="#" class="footer__link-twitter">Твиттер</a>
+                    <a href="#" class="footer__link-fb">Фейсбук</a>
+                </div>
+            </div>
+
+            <div class="footer__registration">
+                <h2 class="registration__title">Запишитесь на бесплатное пробное занятие</h2>
+                <form class="registration__form" action="" method="POST">
+                    <input type="text" name="name" id="name" class="registration__input" placeholder="Ваше имя">
+                    <input type="tel" name="tel" id="tel" class="registration__input" placeholder="Ваш телефон">
+                    <button type="submit" class="registration__submit">Оставить заявку</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__wrapper">
+            <p class="footer__copyrights">(c)2018 Все права защищены</p>
+            <p class="email">Yogaspb.com</p>
+        </div>
+    </footer>
+
+    <script>
+        var nav = document.getElementById('navigation');
+        var navToggle = document.getElementById('navigationToggler');
+
+        navToggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            if(nav.classList.contains('main-nav--closed')) {
+                nav.classList.add('main-nav--opened');
+                nav.classList.remove('main-nav--closed')
+            } else {
+                nav.classList.add('main-nav--closed')
+                nav.classList.remove('main-nav--opened');
+                
+            }
+        })
+    </script>
 </body>
 </html>

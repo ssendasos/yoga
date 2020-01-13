@@ -1,0 +1,43 @@
+.demo-link {
+    display: block;
+    margin-left: 110px;
+    padding-right: 50px;;
+    color: #E65C7B;
+    text-decoration: none;
+    margin-top: 42px;
+    line-height: 12px;
+    font-weight: bold;
+    position: relative;
+    
+}
+
+
+.header-demo {
+    padding-bottom: 74px;
+}
+
+.demo-link::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 26px;
+    top: 0;
+    left: -37px;
+
+    background-color: #E65C7B;
+    
+}
+
+.demo-link::after {
+    content: '';
+    position: absolute;
+    width: 5.5px;
+    height: 5.5px;
+    top: 10.5px;
+    left: -27px;
+    border: 0.8px solid #ffffff;
+    border-left: none;
+    border-bottom: none;
+
+    transform: rotate(45deg);
+}

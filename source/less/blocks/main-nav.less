@@ -1,0 +1,152 @@
+
+.main-nav__button {
+    font-size: 0;
+    border: none;
+    background-color: transparent;
+    
+    height: 12px;
+    margin-left: 15px;
+    margin-top: 19.5px;
+    cursor: pointer;
+    padding: 0;
+    
+    
+    &:hover {
+        .main-nav__button-custom::after,
+        .main-nav__button-custom::before,
+        .main-nav__button-custom {
+            background-color: #E65C7B;
+        }
+    }
+}
+
+.main-nav {
+    position: relative;
+}
+
+.main-nav--closed .main-nav__button-custom {
+    display: block;
+    width: 30px;
+    height: 1px;
+    position: relative;
+    background-color: #8E80A9;
+    top: -7px;
+    
+    
+}
+
+.main-nav--closed .main-nav__wrapper {
+    position: absolute;
+    width: 300px;
+    top: 40px;
+    left: 10px;
+    z-index: 10;
+}
+
+.main-nav--closed .main-nav__wrapper {
+    display: none;
+}
+
+.main-nav--opened .main-nav__button-custom::after {
+    content: none;
+}
+
+.main-nav--opened .main-nav__wrapper {
+    display: block;
+    position: absolute;
+    width: 300px;
+    top: 40px;
+    left: 10px;
+    z-index: 10;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
+}
+
+.main-nav--closed .main-nav__button-custom::before {
+    content: "";
+    width: 30px;
+    height: 1px;
+    background-color: #8E80A9;
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+
+ .main-nav--closed .main-nav__button-custom::after {
+    content: "";
+    width: 20px;
+    
+    height: 1px;
+    background-color: #8E80A9;
+    position: absolute;
+    top: 12px;
+    left: 0;
+}
+
+.main-nav--opened .main-nav__button-custom {
+    width: 1px;
+    height: 1px;
+    position: relative;
+    top: 0;
+    left: 0px;
+    background-color: transparent;
+}
+
+.main-nav--opened .main-nav__button-custom::before,
+.main-nav--opened .main-nav__button-custom::after {
+    content: "";
+    position: absolute;
+
+    width: 20px;
+    height: 1px;
+    top: 0;
+    left: 0;
+
+    background-color: #8E80A9;
+    
+}
+
+.main-nav--opened .main-nav__button-custom::before {
+    transform: rotate(45deg);
+}
+
+.main-nav--opened .main-nav__button-custom::after {
+    transform: rotate(-45deg);
+}
+
+
+
+
+.main-nav__list {
+    list-style: none;
+    padding-left: 0;
+    background-image: url(../../img/background-header-mobile.png);
+    background-position-y: -50px;
+    background-position-x: -10px;
+}
+
+.main-nav__item {
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 0.5px solid #8E80A9;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    
+}
+
+.main-nav__item-link {
+    color: #8E80A9;
+    
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    transition: color 0.7s ease;
+
+    &:hover {
+        color: #E65C7B;
+    }
+}
+
+.main-nav__item:last-child {
+    border-bottom: none;
+}
