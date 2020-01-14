@@ -150,3 +150,52 @@
 .main-nav__item:last-child {
     border-bottom: none;
 }
+
+@media (min-width: @tablet-width) {
+    .tablet {
+        display: block;
+    }
+
+    .main-nav__button-text {
+        font-size: 12px;
+    }
+
+
+    
+    .main-nav__button {
+        margin-top: 38px;
+        margin-left: 78px;
+        
+    }
+
+    .main-mav__button-custom {
+        display: block;
+        margin-left: 10px;
+    }
+
+    .main-nav--closed .main-nav__button-custom,
+    .main-mav--closed .main-nav__button-custom::before {
+        width: 13px;
+    }
+
+    .main-mav--closed .main-nav__button-custom::before {
+        content: "";
+        width: 13px;
+    }
+
+    .main-nav__list {
+        background-image: url(../../img/header-bg-tablet.png);
+        background-position-y: -70px;
+    }
+
+    .main-nav--opened .main-nav__wrapper {
+        width: 748px;
+        top: 60px;
+    }
+
+    .main-nav__item {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 24px;
+    }
+}

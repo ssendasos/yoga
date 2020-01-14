@@ -10,7 +10,9 @@
     <header>
         <div class="page-header">
             <nav class="main-nav main-nav--closed" id="navigation">
-                <button class="main-nav__button" id="navigationToggler"><span class="main-nav__button-custom"></span>Меню</button>
+                <button class="main-nav__button" id="navigationToggler">
+                    <span class="main-nav__button-custom"></span>
+                </button>
                 <div class="main-nav__wrapper">
                     <ul class="main-nav__list">
                         <li class="main-nav__item">
@@ -34,7 +36,10 @@
             </div>
 
             <div class="header-logo">
-                <img class="header-logo--relax" src="img/relax-mobile.svg"  alt="Почувствуй расслабление в своем теле">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="img/relax-tablet.svg">
+                    <img class="header-logo--relax" src="img/relax-mobile.svg"  alt="Почувствуй расслабление в своем теле">
+                </picture>
                 <h1 class="header-logo--main">YOGA</h1>
             </div>
 
@@ -43,9 +48,15 @@
             </div>
 
             <div class="header-socials tablet">
-                <a class="header__vk-link" href="#">Вконтакте</a>
-                <a class="header__twitter-link" href="#">Твиттер</a>
-                <a class="header__fb-link" href="#">Фейсбук</a>
+                <a class="header__vk-link" href="#">
+                    <img src="img/team-logo-vk-mobile.svg" width="7" height="4">
+                </a>
+                <a class="header__twitter-link" href="#">
+                    <img src="img/team-logo-twitter-mobile.svg" width="8" height="6">
+                </a>
+                <a class="header__fb-link" href="#">
+                    <img src="img/fb-dark.svg" width="3" height="6">
+                </a>
             </div>
 
             <div class="header-location tablet">

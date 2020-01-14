@@ -9,6 +9,12 @@
     font-weight: bold;
     position: relative;
     
+    
+
+    &:hover {
+        text-decoration: underline;
+    }
+    
 }
 
 
@@ -40,4 +46,17 @@
     border-bottom: none;
 
     transform: rotate(45deg);
+}
+
+
+@media (min-width: @tablet-width) {
+    .demo-link {
+        margin-left: 345px;
+        margin-top: 71px;
+        padding-right: 250px;;
+    }
+
+    .header-demo {
+        padding-bottom: 60px;
+    }
 }
