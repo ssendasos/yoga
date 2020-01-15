@@ -28,6 +28,11 @@
     cursor: pointer;
 }
 
+
+.option:last-child {
+    margin-right: 0;
+}
+
 .twelve-months {
     margin-right: 0;
 }
@@ -95,4 +100,110 @@
     &:hover {
         background-color: #E65C7B;
     }
+}
+
+
+
+@media (min-width: @tablet-width) {
+    
+    .subscribtions {
+        background: none;
+        background: url(../../img/subscribtions-bg-tablet.png),
+                    url(../../img/subscribtion-bg2-tablet.png) no-repeat 436px 220px;
+    }
+    
+    .subscribtions__title {
+        font-size: 21px;
+    }
+
+    .option {
+        margin-right: 30px;
+    }
+
+    .subscribtions__list {
+        display: flex;
+        margin-top: 45px;
+        margin-left: 82px;
+        height: 221px;
+        padding: 0;
+        padding-bottom: 129px;
+    }
+
+    .subscribtions__item {
+        margin-right: 25px;
+        width: 176px;
+        height: 159px;
+        transition: width 0.5s ease, height 0.5s ease, background-color 1s ease;
+        cursor: pointer;
+        position: relative;
+         
+
+        &:hover {
+            background-color: #E65C7B;
+            
+            .subscribtion__description {
+                color: #ffffff
+            }
+        }
+    }
+
+    .subscribtion__link {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    .subscribtions__item--active {
+        width: 221px;
+        height: 221px;
+
+        cursor: default;
+
+        &:hover {
+            background-color: #ffffff;
+
+            .subscribtion__description {
+                color: #E65C7B;
+            }
+        }
+
+        
+    }
+
+    .subscribtions__item--active .subscribtion__link {
+        
+        padding: 0;
+        margin: 0;
+        padding-left: 21px;
+        padding-right: 21px;
+        padding-top: 7px;
+        padding-bottom: 8px;
+        margin-left: 36px;
+        position: relative;
+        opacity: 1;
+        transition: opacity 1s ease, background-color 0.5s ease;
+        z-index: 1;
+        
+        &:hover {
+            background-color: #E65C7B;
+        }
+    }
+
+    .subscribtion__title {
+        margin: 0;
+        padding: 0;
+        margin-top: 30px;
+    }
+
+    .subscribtion__description {
+        padding: 0;
+        transition: color 1s ease;
+    }    
+
+    .subscribtions__item--active .subscribtion__description {
+        padding: 0;
+        
+    }
+
+    
 }

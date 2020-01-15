@@ -141,19 +141,19 @@
                 <button class="twelve-months option">12 месяцев</button>
             </div>
             <ul class="subscribtions__list">
-                <li class="subscribtions__item">
+                <li class="subscribtions__item " id="subscribtionsItem1">
                     <h3 class="subscribtion__title">Утро</h3>
                     <p class="subscribtion__description">Посещение<br> с 11:00 до 16:00</p>
                     <p class="subscribtion__cost">1 300 Р</p>
                     <a class="subscribtion__link" href="#">Заказать абонемент</a>
                 </li>
-                <li class="subscribtions__item">
+                <li class="subscribtions__item subscribtions__item--active" id="subscribtionsItem2">
                     <h3 class="subscribtion__title">Безлимит</h3>
-                    <p class="subscribtion__description">Посещение не ограничено по времени</p>
+                    <p class="subscribtion__description">Посещение не ограничено<br> по времени</p>
                     <p class="subscribtion__cost">2 800 Р</p>
                     <a class="subscribtion__link" href="#">Заказать абонемент</a>
                 </li>
-                <li class="subscribtions__item">
+                <li class="subscribtions__item " id="subscribtionsItem3">
                     <h3 class="subscribtion__title">Вечер</h3>
                     <p class="subscribtion__description">Посещение<br> с 17:00 до 21:00</p>
                     <p class="subscribtion__cost">2 000 Р</p>
@@ -178,24 +178,27 @@
                             <a class="team__twitter-link" href="#"></a>
                         </div>
                     </div>
-                    <p class="team__user-experience">Опыт преподавания: 8 лет</p>
-                    <p class="team__user-description1">
-                        Практикует с 2011 года, является сертифицированным инструктором по флоу- йоге. Большой опыт
-                        преподавания йоги для начинающих и продолжающих.
-                    </p>
-                    <p class="team__user-description2">
-                        Обучался в Индии (International Association of Yoga: classical yoga, master of principles yoga
-                        therapy), Непале (опыт медитативных и дыхательных техник, проживание в Ашраме), Москва (Аштанга
-                        йога центр 108 А.Константинова), Московский центр классической йоги Виктора Бойко.
-                    </p>
-                    <p class="team__user-description3">
-                        Сертифицированный инструктор по фитнесу и йоге (БГУФК), по массажу (Оздоровительный Витал –
-                        центр №401).
-                    </p>
-                    <p class="team__user-description4">
-                        Организатор и участник многочисленных конвенций и семинаров по йоге, медитативным техникам и
-                        здоровому питанию.
-                    </p>
+                    <div class="team__descriptions">
+                        <p class="team__name--tablet tablet">Сережа Попов</p>
+                        <p class="team__user-experience">Опыт преподавания: 8 лет</p>
+                        <p class="team__user-description1">
+                            Практикует с 2011 года, является сертифицированным инструктором по флоу-йоге. Большой опыт
+                            преподавания йоги для начинающих и продолжающих.
+                        </p>
+                        <p class="team__user-description2">
+                            Обучался в Индии (International Association of Yoga: classical yoga, master of principles yoga
+                            therapy), Непале (опыт медитативных и дыхательных техник, проживание в Ашраме), Москва (Аштанга
+                            йога центр 108 А.Константинова), Московский центр классической йоги Виктора Бойко.
+                        </p>
+                        <p class="team__user-description3">
+                            Сертифицированный инструктор по фитнесу и йоге (БГУФК), по массажу (Оздоровительный Витал –
+                            центр №401).
+                        </p>
+                        <p class="team__user-description4">
+                            Организатор и участник многочисленных конвенций и семинаров по йоге, медитативным техникам и
+                            здоровому питанию.
+                        </p>
+                    </div>
                 </blockquote>
             </div>
         </section>
@@ -297,7 +300,34 @@
                 nav.classList.remove('main-nav--opened');
 
             }
+        });
+
+        var subscribtionsItem1 = document.getElementById('subscribtionsItem1');
+        var subscribtionsItem2 = document.getElementById('subscribtionsItem2');
+        var subscribtionsItem3 = document.getElementById('subscribtionsItem3');
+
+
+        subscribtionsItem1.addEventListener('click', function() {
+            subscribtionsItem1.classList.add('subscribtions__item--active');
+            subscribtionsItem2.classList.remove('subscribtions__item--active');
+            subscribtionsItem3.classList.remove('subscribtions__item--active');
+        });
+
+
+        subscribtionsItem2.addEventListener('click', function() {
+            subscribtionsItem1.classList.remove('subscribtions__item--active');
+            subscribtionsItem2.classList.add('subscribtions__item--active');
+            subscribtionsItem3.classList.remove('subscribtions__item--active');
+        });
+
+
+        subscribtionsItem3.addEventListener('click', function() {
+            subscribtionsItem1.classList.remove('subscribtions__item--active');
+            subscribtionsItem2.classList.remove('subscribtions__item--active');
+            subscribtionsItem3.classList.add('subscribtions__item--active');
         })
+
+
     </script>
 </body>
 
