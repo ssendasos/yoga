@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.min.css" rel="stylesheet">
     <title>yoga</title>
 </head>
+
 <body>
     <header>
         <div class="page-header">
@@ -38,7 +40,8 @@
             <div class="header-logo">
                 <picture>
                     <source media="(min-width: 768px)" srcset="img/relax-tablet.svg">
-                    <img class="header-logo--relax" src="img/relax-mobile.svg"  alt="Почувствуй расслабление в своем теле">
+                    <img class="header-logo--relax" src="img/relax-mobile.svg"
+                        alt="Почувствуй расслабление в своем теле">
                 </picture>
                 <h1 class="header-logo--main">YOGA</h1>
             </div>
@@ -60,9 +63,9 @@
             </div>
 
             <div class="header-location tablet">
-                <span class="location">Санкт-Петербург</span> 
+                <span class="location">Санкт-Петербург</span>
             </div>
-        </nav>
+            </nav>
     </header>
 
     <main class="page-main">
@@ -70,7 +73,7 @@
         <section class="directions">
             <h2 class="directions__title">Направления</h2>
             <ul class="directions__list">
-                <li class="directions__item">
+                <li class="directions__item directions-item1">
                     <img class="directions__photo" src="img/directions1-mobile.jpg" width="250" height="200">
                     <div class="directions__description">
                         <div class="direction__info">
@@ -84,35 +87,50 @@
                         <a class="direction__go-link"></a>
                     </div>
                 </li>
-                <li class="directions__item">
-                    <img class="directions__photo" src="img/directions2-mobile.jpg" width="250" height="200">
-                    <div class="directions__description">
-                        <div class="direction__info">
-                            <h3 class="direction__title">Ашатанга-йога</h3>
-                            <p class="direction__text">
-                                Пн, Ср, Пт - с 11:00 до 14:00 <br>
-                                Вт, Чт - с 19:00 до 21:00
-                            </p>
-                            <a class="direction__instructor-link" href="#">Инструктор<br>Емельянова Полина</a>
+                <li class="directions__item directions-item2">
+                    <div class="directions__wrapper">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="img/directions-image2-tablet.jpg">
+                            <img class="directions__photo" src="img/directions2-mobile.jpg" >
+                        </picture>
+                        <div class="directions__description">
+                            <div class="direction__info">
+                                <h3 class="direction__title">Ашатанга-йога</h3>
+                                <p class="direction__text">
+                                    Пн, Ср, Пт - с 11:00 до 14:00 <br>
+                                    Вт, Чт - с 19:00 до 21:00
+                                </p>
+                                <a class="direction__instructor-link" href="#">Инструктор<br>Емельянова Полина</a>
+                            </div>
+                            <a class="direction__go-link" href="#"></a>
                         </div>
-                        <a class="direction__go-link" href="#"></a>
                     </div>
                 </li>
-                <li class="directions__item">
-                    <img class="directions__photo" src="img/directions3-mobile.jpg" width="250" height="200">
-                    <div class="directions__description">
-                        <div class="direction__info">
-                            <h3 class="direction__title">Кундалини-йога</h3>
-                            <p class="direction__text">
-                                Пн, Ср, Пт - с 12:00 до 15:00 <br>
-                                Вт, Чт - с 18:00 до 21:00
-                            </p>
-                            <a class="direction__instructor-link" href="#">Инструктор<br>Емельянова Полина</a>
+                <li class="directions__item directions-item3">
+                    <div class="directions__wrapper">
+                        <p>
+                            <source media="(min-width: 768px)" srcset="img/directions-image3-tablet.jpg">
+                            <img class="directions__photo" src="img/directions3-mobile.jpg">
+                        </p>
+
+                        <div class="directions__description">
+                            <div class="direction__info">
+                                <h3 class="direction__title">Кундалини-йога</h3>
+                                <p class="direction__text">
+                                    Пн, Ср, Пт - с 12:00 до 15:00 <br>
+                                    Вт, Чт - с 18:00 до 21:00
+                                </p>
+                                <a class="direction__instructor-link" href="#">Инструктор<br>Емельянова Полина</a>
+                            </div>
+                            <a class="direction__go-link"></a>
                         </div>
-                        <a class="direction__go-link"></a>
                     </div>
+                </li>
+                <li class="directions-item4">
+                    <a href="#" class="direction__more-link tablet">Смотреть больше</a>
                 </li>
             </ul>
+            
         </section>
 
         <section class="subscribtions">
@@ -149,7 +167,8 @@
             <div class="team__list">
                 <blockquote class="team__user">
                     <div class="team__info">
-                        <img class="team__avatar" src="img/team-avatar-mobile.jpg" width="82" height="82" alt="Сережа Попов">
+                        <img class="team__avatar" src="img/team-avatar-mobile.jpg" width="82" height="82"
+                            alt="Сережа Попов">
                         <div class="team__username">
                             <cite class="team__name">Инструктор<br>Сережа Попов</cite>
                             <p class="team__specialization">Хатха-йога</p>
@@ -161,16 +180,21 @@
                     </div>
                     <p class="team__user-experience">Опыт преподавания: 8 лет</p>
                     <p class="team__user-description1">
-                        Практикует с 2011 года, является сертифицированным инструктором по флоу- йоге. Большой опыт преподавания йоги для начинающих и продолжающих.
+                        Практикует с 2011 года, является сертифицированным инструктором по флоу- йоге. Большой опыт
+                        преподавания йоги для начинающих и продолжающих.
                     </p>
                     <p class="team__user-description2">
-                        Обучался в Индии (International Association of Yoga: classical yoga, master of principles yoga therapy), Непале (опыт медитативных и дыхательных техник, проживание в Ашраме), Москва (Аштанга йога центр 108 А.Константинова), Московский центр классической йоги Виктора Бойко.
+                        Обучался в Индии (International Association of Yoga: classical yoga, master of principles yoga
+                        therapy), Непале (опыт медитативных и дыхательных техник, проживание в Ашраме), Москва (Аштанга
+                        йога центр 108 А.Константинова), Московский центр классической йоги Виктора Бойко.
                     </p>
                     <p class="team__user-description3">
-                        Сертифицированный инструктор по фитнесу и йоге (БГУФК), по массажу (Оздоровительный Витал – центр №401). 
+                        Сертифицированный инструктор по фитнесу и йоге (БГУФК), по массажу (Оздоровительный Витал –
+                        центр №401).
                     </p>
                     <p class="team__user-description4">
-                        Организатор и участник многочисленных конвенций и семинаров по йоге, медитативным техникам и здоровому питанию.
+                        Организатор и участник многочисленных конвенций и семинаров по йоге, медитативным техникам и
+                        здоровому питанию.
                     </p>
                 </blockquote>
             </div>
@@ -182,9 +206,10 @@
                 <div class="reviews__list">
                     <blockquote class="reviews__item">
                         <div class="reviews__description">
-                            
+
                             <p class="reviews__text1">
-                                Хожу на йогу вечером, чтобы расслабиться после тяжелого трудового дня. И после занятий наступает спокойствие!
+                                Хожу на йогу вечером, чтобы расслабиться после тяжелого трудового дня. И после занятий
+                                наступает спокойствие!
                             </p>
                             <p class="reviews__text2">
                                 Йога это отличный способ быстро и качественно расслабиться. Спасибо инструктору Марине.
@@ -196,8 +221,10 @@
                                 <cite class="reviews__username">Сережа Попов</cite>
                                 <p class="reviews__date">16 мая 2018</p>
                                 <div class="reviews__socials">
-                                    <a href="#" class="reviews__vk-link"><img src="img/team-logo-vk-mobile.svg" width="13" height="8"></a>
-                                    <a href="#" class="reviews__twitter-link"><img src="img/team-logo-twitter-mobile.svg" width="15" height="10"></a>
+                                    <a href="#" class="reviews__vk-link"><img src="img/team-logo-vk-mobile.svg"
+                                            width="13" height="8"></a>
+                                    <a href="#" class="reviews__twitter-link"><img
+                                            src="img/team-logo-twitter-mobile.svg" width="15" height="10"></a>
                                 </div>
                             </div>
                         </div>
@@ -206,7 +233,7 @@
             </div>
         </section>
 
-        
+
     </main>
 
     <footer class="page-footer">
@@ -260,17 +287,18 @@
         var nav = document.getElementById('navigation');
         var navToggle = document.getElementById('navigationToggler');
 
-        navToggle.addEventListener('click', function(e) {
+        navToggle.addEventListener('click', function (e) {
             e.preventDefault();
-            if(nav.classList.contains('main-nav--closed')) {
+            if (nav.classList.contains('main-nav--closed')) {
                 nav.classList.add('main-nav--opened');
                 nav.classList.remove('main-nav--closed')
             } else {
                 nav.classList.add('main-nav--closed')
                 nav.classList.remove('main-nav--opened');
-                
+
             }
         })
     </script>
 </body>
+
 </html>
