@@ -1,6 +1,7 @@
 .footer__registration {
     order: 1;
     background-image: url(../../img/registration-bg-mobile.png);
+    background-repeat: no-repeat;
 }
 
 .registration__title {
@@ -56,4 +57,43 @@
     cursor: pointer;
     margin-bottom: 60px;
     
+}
+
+
+@media (min-width: @tablet-width) {
+    
+    .footer__registration {
+        background-image: url(../../img/footer-bg-tablet.png);
+    }
+    
+    
+    .registration__input {
+        width: 407.5px;
+        padding-bottom: 6px;
+    }
+    
+    .registration__input::placeholder {
+        font-weight: 500;
+    }
+
+
+    .registration__title {
+        margin-left: 180px;
+        font-size: 30px;
+        line-height: 40px;
+        
+        padding-right: 70px;
+        padding-top: 70px;
+    }
+
+    .registration__form {
+        margin-left: 180px;
+    }
+
+
+    .registration__submit {
+        padding-left: 150px;
+        padding-right: 151px;
+        margin-top: 50px;
+    }
 }
