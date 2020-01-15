@@ -1,4 +1,6 @@
 
+
+
 .team {
     background-image: url(../../img/team-bg-mobile.png);
     background-repeat: no-repeat;
@@ -45,6 +47,7 @@
     font-weight: 700;
     line-height: 20px;
     margin-top: 5px;
+    margin-bottom: 0;
 }
 
 .team__socials {
@@ -82,3 +85,118 @@
     margin: 0px;
     margin-bottom: 8px;
 }
+
+
+.team__info:nth-child(2),
+.team__info:nth-child(3) {
+    display: none;
+}
+
+.team__info img {
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (min-width: @tablet-width) {
+    .team__info img {
+        width: auto;
+        height: auto;
+    }
+
+    .team__info:nth-child(2),
+    .team__info:nth-child(3) {
+        display: flex;
+    }
+    
+    .team__title {
+        font-size: 21px;
+        margin-bottom: 76px;
+    }
+
+    .team__user {
+        display: flex;
+        margin-left: 100px;
+        
+    }
+
+    .team__descriptions {
+        width: 311px;
+        margin-left: 43px;
+    }
+
+    .team__info {
+        height: 67px;
+        margin-bottom: 57px;
+        width: 255px;
+        justify-content: flex-start;
+    }
+
+    .team__avatar {
+        margin-top: -35px;
+        margin-left: -15px;
+    }
+
+    .team__user-description1,
+    .team__user-description2,
+    .team__user-description3 {
+        margin-bottom: 20px;
+    }
+
+    .team__name--tablet {
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0;
+    }
+
+    .team__name {
+        font-weight: 600;
+    }
+
+    .team__username {
+        margin-top: 10px;
+        
+        margin-left: 10px;
+        
+    }
+
+    .team__specialization {
+        margin-top: 0;
+        font-weight: 600;
+    }
+
+    .team__socials {
+        width: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 16px;
+        margin-left: 30px;
+        
+        margin-right: 0;
+    }
+
+    .team__vk-link {
+        width: 9px;
+        height: 6px;
+        margin-left: 7px;
+
+        background-image: url(../../img/team-vk-tablet.svg);
+    }
+
+    .team__twitter-link {
+        width: 10px;
+        height: 7px;
+        margin-left: 7px;
+        
+
+        background-image: url(../../img/team-twitter-tablet.svg);
+    }
+
+    .team__watch {
+        margin-top: -15px;
+        color: #8E80A9;
+        
+    }
+}
+
+
