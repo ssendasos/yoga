@@ -53,10 +53,45 @@
     .demo-link {
         margin-left: 345px;
         margin-top: 71px;
-        padding-right: 250px;;
+        padding-right: 250px;
     }
 
     .header-demo {
         padding-bottom: 50px;
     }
+
+
+    
+}
+
+
+@media (min-width: @desktop-width) {
+    .demo-link {
+        margin-left: 640px;
+        margin-top: 140px;
+        font-size: 14px;
+        line-height: 20px;
+        padding-right: 600px;
+
+    }
+
+    .demo-link::before {
+        width: 56px;
+        height: 48px;
+        left: -69px;
+        top: -5px;
+    }
+
+    .demo-link::after {
+        width: 11px;
+        height: 11px;
+        top: 13px;
+        left: -49px;
+    }
+
+    .header-demo {
+        padding-bottom: 130px;
+    }
+
+    
 }
