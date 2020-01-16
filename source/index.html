@@ -345,13 +345,23 @@
                     </div>
                     <div class="footer__socials">
                         <a href="#" class="footer__vk-link">
-                            <img src="img/footer-vk-mobile.svg" width="25" height="15">
+                            <picture>
+                                <source media="(min-width: 1440px)" srcset="img/team-logo-vk-mobile.svg">
+                                <img src="img/footer-vk-mobile.svg" width="25" height="15">
+                            </picture>
+
                         </a>
                         <a href="#" class="footer__twitter-link">
-                            <img src="img/footer-twitter-mobile.svg" width="29" height="20">
+                            <picture>
+                                <source media="(min-width: 1440px)" srcset="img/team-logo-twitter-mobile.svg">
+                                <img src="img/footer-twitter-mobile.svg" width="29" height="20">
+                            </picture>
                         </a>
                         <a href="#" class="footer__fb-link">
-                            <img src="img/footer-fb-mobile.svg" width="10" height="21">
+                            <picture>
+                                <source media="(min-width: 1440px)" srcset="img/fb-dark.svg">
+                                <img src="img/footer-fb-mobile.svg" width="10" height="21">
+                            </picture>
                         </a>
                     </div>
                 </div>
@@ -360,7 +370,7 @@
             <div class="footer__registration">
                 <h2 class="registration__title">Запишитесь на бесплатное пробное занятие</h2>
                 <form class="registration__form" action="" method="POST">
-                    <input type="text" name="name" id="name" class="registration__input" placeholder="Ваше имя">
+                    <input type="text" name="name" id="name" class="registration__input" placeholder="Ваше имя"><br>
                     <input type="tel" name="tel" id="tel" class="registration__input" placeholder="Ваш телефон"><br>
                     <button type="submit" class="registration__submit">Оставить заявку</button>
                 </form>
