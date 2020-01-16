@@ -205,15 +205,73 @@
         
     }
 
+    
+}
 
-    @media (min-width: @desktop-width) {
 
+@media (min-width: @desktop-width) {
 
-        .subscribtions__title {
-            margin-top: 140px;
-            font-size: 30px;
-        }
+    .subscribtions {
+        background-image: url(../../img/subscribtions-bg-desktop.png);
+        background-position-y: -60px;
     }
 
-    
+
+    .subscribtions__title {
+        margin-top: 140px;
+        font-size: 30px;
+        margin-bottom: 54px;
+    }
+
+    .option {
+        margin-right: 50px;
+    }
+
+    .subscribtions__list {
+        margin-left: 257px;
+        height: 331px;
+    }
+
+    .subscribtions__item {
+        width: 263px;
+        height: 237px;
+        margin-right: 37px;
+    }
+
+    .subscribtions__item--active {
+        width: 331px;
+        height: 331px;
+    }
+
+    .subscribtion__title {
+        font-size: 18px;
+        line-height: 15px;
+        margin-top: 57px;
+
+    }
+
+    .subscribtion__description {
+        font-size: 12px;
+        line-height: 20px;
+        margin-top: 20px;
+        font-weight: 600;
+    }
+
+    .subscribtion__cost {
+        font-size: 30px;
+        margin-top: 26px;
+        margin-bottom: 46px;
+    }
+
+    .subscribtions__item--active .subscribtion__link {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-left: 54px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+
 }
