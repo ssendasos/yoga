@@ -75,7 +75,10 @@
             <h2 class="directions__title">Направления</h2>
             <ul class="directions__list">
                 <li class="directions__item directions-item1">
-                    <img class="directions__photo" src="img/directions1-mobile.jpg" width="250" height="200">
+                    <picture>
+                        <source media="(min-width: 1440px)" srcset="img/directions-image1-desktop.jpg">
+                        <img class="directions__photo" src="img/directions1-mobile.jpg">
+                    </picture>
                     <div class="directions__description">
                         <div class="direction__info">
                             <h3 class="direction__title">Хатха-йога</h3>
@@ -91,6 +94,7 @@
                 <li class="directions__item directions-item2">
                     <div class="directions__wrapper">
                         <picture>
+                            <source media="(min-width: 1440px)" srcset="img/directions-image2-desktop.jpg">
                             <source media="(min-width: 768px)" srcset="img/directions-image2-tablet.jpg">
                             <img class="directions__photo" src="img/directions2-mobile.jpg" >
                         </picture>
@@ -110,6 +114,7 @@
                 <li class="directions__item directions-item3">
                     <div class="directions__wrapper">
                         <p>
+                            <source media="(min-width: 1440px)" srcset="img/directions-image3-desktop.jpg">
                             <source media="(min-width: 768px)" srcset="img/directions-image3-tablet.jpg">
                             <img class="directions__photo" src="img/directions3-mobile.jpg">
                         </p>

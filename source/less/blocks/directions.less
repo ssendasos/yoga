@@ -165,12 +165,7 @@
         height: 5px;
     }
 
-    .directions-item2 .direction__info,
-    .directions-item3 .direction__info {
-        
-        
-        height: 122px;
-    }
+    
 
     .directions-item2 .directions__description,
     .directions-item3 .directions__description {
@@ -211,6 +206,126 @@
 
     .direction__text {
         width: 150px;
+    }
+
+    
+}
+
+
+
+@media (min-width: @desktop-width) {
+    
+
+    .directions {
+        background-image: url(../../img/directions-bg-desktop.png);
+        background-position: 115px -60px;
+    }
+
+    .directions__title {
+        font-size: 30px;
+    }
+
+
+    .directions__list {
+        grid-template-columns: 366px 532px;
+        grid-template-rows: 180px 180px 48px;
+        row-gap: 28px;
+        column-gap: 31px;
+        margin-left: 250px;
+        margin-top: 65px;
+    }
+
+    .directions-item2 .directions__photo,
+    .directions-item3 .directions__photo {
+        width: 227px;
+        height: 182px;
+        
+    }
+
+    .directions-item3 .directions__photo {
+        margin-top: -10px;
+    }
+
+    .directions-item1 .direction__instructor-link {
+       padding-bottom: 27px; 
+       margin-top: 16px;
+    }
+
+    .directions-item1 .direction__go-link {
+        width: 64px;
+    }
+
+    .directions-item1 .direction__go-link::before {
+        width: 10px;
+        height: 10px;
+        top: 83px;
+        left: 23px;
+    }
+
+    .directions-item1 .direction__info {
+        padding-bottom: 0;
+    }
+
+    
+
+    .directions-item2 .directions__description,
+    .directions-item3 .directions__description {
+        height: 182px;
+        width: 305px;
+        margin-top: 1px;
+        margin-top: 0;
+    }
+
+    .direction__title {
+        font-size: 16px;
+    }
+
+    .direction__text {
+        width: 171px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .direction__instructor-link {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .direction__info {
+        padding-top: 37px;
+        padding-left: 46px;
+        margin-left: 0;
+    }
+
+
+    .direction__more-link {
+        font-size: 12px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        
+    }
+
+    .directions-item4 {
+        margin-top: 27px;
+    }
+
+    .directions-item2 .direction__go-link,
+    .directions-item3 .direction__go-link {
+        width: 45px;
+        height: 30px;
+        margin-top: 115px;
+    }
+
+    .directions-item2 .direction__go-link::before,
+    .directions-item3 .direction__go-link::before {
+        width: 9px;
+        height: 9px;
+        top: 10px;
+        left: 15px;
+        border-width: 0.5px;
     }
 
     
