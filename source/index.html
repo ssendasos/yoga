@@ -12,7 +12,7 @@
     <header>
         <div class="page-header">
             <nav class="main-nav main-nav--closed" id="navigation">
-                <button class="main-nav__button" id="navigationToggler">
+                <button class="main-nav__button" id="navigationToggler" aria-label="Меню">
                     <span class="main-nav__button-custom"></span>
                 </button>
                 <div class="main-nav__wrapper">
@@ -52,14 +52,20 @@
             </div>
 
             <div class="header-socials tablet">
-                <a class="header__vk-link" href="#">
-                    <img src="img/team-logo-vk-mobile.svg">
+                <a class="header__vk-link" href="#" aria-label="Вконтакте">
+                    <svg class="header__social-button" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.8574 8.91937C15.8144 8.8405 15.5484 8.20732 14.2683 6.90591C12.9282 5.54315 13.1082 5.76443 14.7223 3.40809C15.7054 1.97303 16.0984 1.09665 15.9754 0.722004C15.8584 0.364883 15.1353 0.459093 15.1353 0.459093L12.7312 0.474429C12.7312 0.474429 12.5531 0.448138 12.4201 0.53468C12.2911 0.620126 12.2081 0.81731 12.2081 0.81731C12.2081 0.81731 11.8271 1.92811 11.3191 2.8724C10.248 4.86505 9.81894 4.97022 9.64393 4.84643C9.2369 4.55832 9.33891 3.68743 9.33891 3.06959C9.33891 1.13828 9.60593 0.333114 8.81787 0.124976C8.55585 0.0559615 8.36384 0.00995199 7.69479 0.00228373C6.83673 -0.00757546 6.10967 0.00557012 5.69864 0.225759C5.42462 0.372551 5.21361 0.700095 5.34262 0.718718C5.50163 0.741723 5.86165 0.824978 6.05267 1.1098C6.29969 1.47678 6.29068 2.30276 6.29068 2.30276C6.29068 2.30276 6.4327 4.57585 5.95966 4.85848C5.63464 5.05238 5.1896 4.65692 4.23453 2.8483C3.7455 1.92263 3.37547 0.898375 3.37547 0.898375C3.37547 0.898375 3.30447 0.707763 3.17746 0.605885C3.02345 0.482098 2.80743 0.442661 2.80743 0.442661L0.521262 0.457997C0.521262 0.457997 0.178236 0.468952 0.0522271 0.632177C-0.0597811 0.777873 0.0432264 1.07803 0.0432264 1.07803C0.0432264 1.07803 1.83336 5.66474 3.85951 7.97727C5.71864 10.097 7.8288 9.95787 7.8288 9.95787H8.78487C8.78487 9.95787 9.07389 9.92282 9.2209 9.74864C9.35691 9.5887 9.35191 9.28854 9.35191 9.28854C9.35191 9.28854 9.33291 7.88306 9.92895 7.67602C10.516 7.47226 11.2701 9.03439 12.0691 9.6358C12.6732 10.0904 13.1322 9.99073 13.1322 9.99073L15.2693 9.95787C15.2693 9.95787 16.3874 9.88228 15.8574 8.91937Z" fill="#8B7EAC" fill-opacity="0.65"/>
+                        </svg>
                 </a>
-                <a class="header__twitter-link" href="#">
-                    <img src="img/team-logo-twitter-mobile.svg">
+                <a class="header__twitter-link" href="#" aria-label="Твиттер">
+                    <svg class="header__social-button" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.9606 5.335C16.9715 5.25429 17.6573 4.80953 17.9212 4.20606C17.5565 4.42285 16.4245 4.6592 15.7993 4.43411C15.7686 4.29196 15.7344 4.15694 15.7008 4.03504C15.2244 2.34228 13.5934 0.978527 11.8844 1.14328C12.0227 1.08925 12.1629 1.03895 12.3027 0.993795C12.4909 0.928593 13.5945 0.754813 13.4207 0.377812C13.2743 0.046209 11.9258 0.628417 11.6719 0.704514C12.0071 0.582532 12.5614 0.372709 12.6208 0C12.1073 0.0681592 11.6032 0.303091 11.2137 0.644697C11.3543 0.498214 11.461 0.319696 11.4836 0.127571C10.1141 0.974275 9.31406 2.68129 8.66661 4.33716C8.15823 3.86037 7.70764 3.48491 7.30342 3.27642C6.16943 2.68793 4.81356 2.07393 2.68516 1.30932C2.61984 1.99079 3.03343 2.89691 4.22521 3.49948C3.967 3.46603 3.49482 3.54067 3.11717 3.62819C3.27097 4.40888 3.77324 5.05208 5.133 5.36311C4.51158 5.4028 4.19043 5.53964 3.89937 5.83459C4.1824 6.37756 4.87303 7.01659 6.11541 6.88541C4.73414 7.46154 5.5522 8.52848 6.67614 8.36936C4.75878 10.2859 1.73586 10.145 0 8.54205C4.53221 14.5185 14.3842 12.0765 15.8524 6.32005C16.9524 6.32912 17.599 5.95131 18 5.53478C17.3662 5.63886 16.4476 5.5313 15.9606 5.335Z" fill="#8B7EAC" fill-opacity="0.65"/>
+                        </svg>
                 </a>
-                <a class="header__fb-link" href="#">
-                    <img src="img/fb-dark.svg">
+                <a class="header__fb-link" href="#" aria-label="Фейсбук">
+                    <svg class="header__social-button" viewBox="0 0 3 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.810234 1.15296C0.810234 1.29942 0.810234 1.95312 0.810234 1.95312H0.223999V2.93157H0.810234V5.83916H2.01449V2.93165H2.82259C2.82259 2.93165 2.89828 2.46249 2.93496 1.94952C2.82978 1.94952 2.01904 1.94952 2.01904 1.94952C2.01904 1.94952 2.01904 1.38029 2.01904 1.28051C2.01904 1.18052 2.15034 1.04602 2.28011 1.04602C2.40964 1.04602 2.68303 1.04602 2.93623 1.04602C2.93623 0.912805 2.93623 0.452512 2.93623 0.0274048C2.59821 0.0274048 2.21365 0.0274048 2.04413 0.0274048C0.780467 0.0273372 0.810234 1.00676 0.810234 1.15296Z" fill="#8B7EAC" fill-opacity="0.65"/>
+                        </svg>
                 </a>
             </div>
 
@@ -76,8 +82,8 @@
             <ul class="directions__list">
                 <li class="directions__item directions-item1">
                     <picture>
-                        <source media="(min-width: 1440px)" srcset="img/directions-image1-desktop.jpg">
-                        <img class="directions__photo" src="img/directions1-mobile.jpg">
+                        <source media="(min-width: 1440px)" srcset="img/directions-image1-desktop.webp">
+                        <img class="directions__photo" src="img/directions1-mobile.webp" alt="Направление 1">
                     </picture>
                     <div class="directions__description">
                         <div class="direction__info">
@@ -88,15 +94,15 @@
                             </p>
                             <a class="direction__instructor-link" href="#">Инструктор<br>Емельянова Полина</a>
                         </div>
-                        <a class="direction__go-link"></a>
+                        <a class="direction__go-link" aria-label="Перейти"></a>
                     </div>
                 </li>
                 <li class="directions__item directions-item2">
                     <div class="directions__wrapper">
                         <picture>
-                            <source media="(min-width: 1440px)" srcset="img/directions-image2-desktop.jpg">
-                            <source media="(min-width: 768px)" srcset="img/directions-image2-tablet.jpg">
-                            <img class="directions__photo" src="img/directions2-mobile.jpg" >
+                            <source media="(min-width: 1440px)" srcset="img/directions-image2-desktop.webp">
+                            <source media="(min-width: 768px)" srcset="img/directions-image2-tablet.webp">
+                            <img class="directions__photo" src="img/directions2-mobile.webp" alt="Направление 2">
                         </picture>
                         <div class="directions__description">
                             <div class="direction__info">
@@ -107,16 +113,16 @@
                                 </p>
                                 <a class="direction__instructor-link" href="#">Инструктор<br>Емельянова Полина</a>
                             </div>
-                            <a class="direction__go-link" href="#"></a>
+                            <a class="direction__go-link" href="#" aria-label="Перейти"></a>
                         </div>
                     </div>
                 </li>
                 <li class="directions__item directions-item3">
                     <div class="directions__wrapper">
                         <p>
-                            <source media="(min-width: 1440px)" srcset="img/directions-image3-desktop.jpg">
-                            <source media="(min-width: 768px)" srcset="img/directions-image3-tablet.jpg">
-                            <img class="directions__photo" src="img/directions3-mobile.jpg">
+                            <source media="(min-width: 1440px)" srcset="img/directions-image3-desktop.webp">
+                            <source media="(min-width: 768px)" srcset="img/directions-image3-tablet.webp">
+                            <img class="directions__photo" src="img/directions3-mobile.webp" alt="Направление 3">
                         </p>
 
                         <div class="directions__description">
@@ -128,7 +134,7 @@
                                 </p>
                                 <a class="direction__instructor-link" href="#">Инструктор<br>Емельянова Полина</a>
                             </div>
-                            <a class="direction__go-link"></a>
+                            <a class="direction__go-link" aria-label="Перейти"></a>
                         </div>
                     </div>
                 </li>
@@ -142,9 +148,9 @@
         <section class="subscribtions">
             <h2 class="subscribtions__title">Абонементы</h2>
             <div class="subscribtions__options">
-                <button class="one-month option option--active">1 месяц</button>
-                <button class="six-months option">6 месяцев</button>
-                <button class="twelve-months option">12 месяцев</button>
+                <button class="one-month option option--active" aria-label="One Month">1 месяц</button>
+                <button class="six-months option" aria-label="Six Months">6 месяцев</button>
+                <button class="twelve-months option" aria-label="Twelve Months">12 месяцев</button>
             </div>
             <ul class="subscribtions__list">
                 <li class="subscribtions__item " id="subscribtionsItem1">
@@ -175,9 +181,9 @@
                     <div class="team__infos">
                         <div class="team__info">
                             <picture>
-                                <source media="(min-width: 1440px)" srcset="img/team-avatar-desktop.jpg">
-                                <source media="(min-width: 768px)" srcset="img/team-avatar-tablet.jpg">
-                                <img class="team__avatar" src="img/team-avatar-mobile.jpg" 
+                                <source media="(min-width: 1440px)" srcset="img/team-avatar-desktop.webp">
+                                <source media="(min-width: 768px)" srcset="img/team-avatar-tablet.webp">
+                                <img class="team__avatar" src="img/team-avatar-mobile.webp" 
                                     alt="Сережа Попов">
                             </picture>
                             <div class="team__username">
@@ -186,19 +192,19 @@
                             </div>
                             <div class="team__socials">
                                 <a class="team__vk-link" href="#">
-                                    <img src="img/team-logo-vk-mobile.svg">
+                                    <img src="img/team-logo-vk-mobile.svg" alt="Вконтакте">
                                 </a>
                                 <a class="team__twitter-link" href="#">
-                                    <img src="img/team-logo-twitter-mobile.svg">
+                                    <img src="img/team-logo-twitter-mobile.svg" alt="Твиттер">
                                 </a>
                                 <a class="team__watch tablet" href="#">Смотреть</a>
                             </div>
                         </div>
                         <div class="team__info tablet">
                             <picture>
-                                <source media="(min-width: 1440px)" srcset="img/team-avatar-desktop.jpg">
-                                <source media="(min-width: 768px)" srcset="img/team-avatar-tablet.jpg">
-                                <img class="team__avatar" src="img/team-avatar-mobile.jpg" 
+                                <source media="(min-width: 1440px)" srcset="img/team-avatar-desktop.webp">
+                                <source media="(min-width: 768px)" srcset="img/team-avatar-tablet.webp">
+                                <img class="team__avatar" src="img/team-avatar-mobile.webp" 
                                     alt="Сережа Попов">
                             </picture>
                             <div class="team__username">
@@ -207,19 +213,19 @@
                             </div>
                             <div class="team__socials">
                                 <a class="team__vk-link" href="#">
-                                    <img src="img/team-logo-vk-mobile.svg">
+                                    <img src="img/team-logo-vk-mobile.svg" alt="Вконтакте">
                                 </a>
                                 <a class="team__twitter-link" href="#">
-                                    <img src="img/team-logo-twitter-mobile.svg">
+                                    <img src="img/team-logo-twitter-mobile.svg" alt="Твиттер">
                                 </a>
                                 <a class="team__watch tablet" href="#">Смотреть</a>
                             </div>
                         </div>
                         <div class="team__info tablet">
                             <picture>
-                                <source media="(min-width: 1440px)" srcset="img/team-avatar-desktop.jpg">
-                                <source media="(min-width: 768px)" srcset="img/team-avatar-tablet.jpg">
-                                <img class="team__avatar" src="img/team-avatar-mobile.jpg" 
+                                <source media="(min-width: 1440px)" srcset="img/team-avatar-desktop.webp">
+                                <source media="(min-width: 768px)" srcset="img/team-avatar-tablet.webp">
+                                <img class="team__avatar" src="img/team-avatar-mobile.webp" 
                                     alt="Сережа Попов">
                             </picture>
                             <div class="team__username">
@@ -228,10 +234,10 @@
                             </div>
                             <div class="team__socials">
                                 <a class="team__vk-link" href="#">
-                                    <img src="img/team-logo-vk-mobile.svg">
+                                    <img src="img/team-logo-vk-mobile.svg" alt="Вконтакте">
                                 </a>
                                 <a class="team__twitter-link" href="#">
-                                    <img src="img/team-logo-twitter-mobile.svg">
+                                    <img src="img/team-logo-twitter-mobile.svg" alt="Твиттер">
                                 </a>
                                 <a class="team__watch tablet" href="#">Смотреть</a>
                             </div>
@@ -278,15 +284,18 @@
                             </p>
                         </div>
                         <div class="reviews__user">
-                            <img class="reviews__avatar" src="img/reviews-avatar-mobile.jpg" width="60" height="55">
+                            <img class="reviews__avatar" src="img/reviews-avatar-mobile.webp" width="60" height="55" alt="Сережа Попов">
                             <div class="reviews__user-info">
                                 <cite class="reviews__username">Сережа Попов</cite>
                                 <p class="reviews__date">16 мая 2018</p>
                                 <div class="reviews__socials">
-                                    <a href="#" class="reviews__vk-link"><img src="img/team-logo-vk-mobile.svg"
-                                            width="13" height="8"></a>
-                                    <a href="#" class="reviews__twitter-link"><img
-                                            src="img/team-logo-twitter-mobile.svg" width="15" height="10"></a>
+                                    <a href="#" class="reviews__vk-link">
+                                        <img src="img/team-logo-vk-mobile.svg"
+                                            width="13" height="8" alt="Вконтакте">
+                                    </a>
+                                    <a href="#" class="reviews__twitter-link">
+                                        <img src="img/team-logo-twitter-mobile.svg" width="15" height="10" alt="Твиттер">
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -303,15 +312,17 @@
                             </p>
                         </div>
                         <div class="reviews__user">
-                            <img class="reviews__avatar" src="img/reviews-avatar-mobile.jpg" width="60" height="55">
+                            <img class="reviews__avatar" src="img/reviews-avatar-mobile.webp" width="60" height="55" alt="Сережа Попов">
                             <div class="reviews__user-info">
                                 <cite class="reviews__username">Сережа Попов</cite>
                                 <p class="reviews__date">16 мая 2018</p>
                                 <div class="reviews__socials">
-                                    <a href="#" class="reviews__vk-link"><img src="img/team-logo-vk-mobile.svg"
-                                            width="13" height="8"></a>
-                                    <a href="#" class="reviews__twitter-link"><img
-                                            src="img/team-logo-twitter-mobile.svg" width="15" height="10"></a>
+                                    <a href="#" class="reviews__vk-link">
+                                        <img src="img/team-logo-vk-mobile.svg" width="13" height="8" alt="Вконтакте">
+                                    </a>
+                                    <a href="#" class="reviews__twitter-link">
+                                        <img src="img/team-logo-twitter-mobile.svg" width="15" height="10" alt="Твиттер">
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -347,20 +358,20 @@
                         <a href="#" class="footer__vk-link">
                             <picture>
                                 <source media="(min-width: 1440px)" srcset="img/team-logo-vk-mobile.svg">
-                                <img src="img/footer-vk-mobile.svg" width="25" height="15">
+                                <img src="img/footer-vk-mobile.svg" width="25" height="15" alt="Вконтакте">
                             </picture>
 
                         </a>
                         <a href="#" class="footer__twitter-link">
                             <picture>
                                 <source media="(min-width: 1440px)" srcset="img/team-logo-twitter-mobile.svg">
-                                <img src="img/footer-twitter-mobile.svg" width="29" height="20">
+                                <img src="img/footer-twitter-mobile.svg" width="29" height="20" alt="Твиттер">
                             </picture>
                         </a>
                         <a href="#" class="footer__fb-link">
                             <picture>
                                 <source media="(min-width: 1440px)" srcset="img/fb-dark.svg">
-                                <img src="img/footer-fb-mobile.svg" width="10" height="21">
+                                <img src="img/footer-fb-mobile.svg" width="10" height="21" alt="Фейсбук">
                             </picture>
                         </a>
                     </div>
@@ -370,9 +381,13 @@
             <div class="footer__registration">
                 <h2 class="registration__title">Запишитесь на бесплатное пробное занятие</h2>
                 <form class="registration__form" action="" method="POST">
-                    <input type="text" name="name" id="name" class="registration__input" placeholder="Ваше имя"><br>
-                    <input type="tel" name="tel" id="tel" class="registration__input" placeholder="Ваш телефон"><br>
-                    <button type="submit" class="registration__submit">Оставить заявку</button>
+                    <label>
+                        <input type="text" name="name" id="name" class="registration__input" placeholder="Ваше имя" alt="Имя"><br>
+                    </label>
+                    <label>
+                        <input type="tel" name="tel" id="tel" class="registration__input" placeholder="Ваш телефон" alt="Телефон"><br>
+                    </label>
+                    <button type="submit" class="registration__submit" aria-label="Оставить заявку">Оставить заявку</button>
                 </form>
             </div>
         </div>
@@ -382,49 +397,8 @@
         </div>
     </footer>
 
-    <script>
-        var nav = document.getElementById('navigation');
-        var navToggle = document.getElementById('navigationToggler');
-
-        navToggle.addEventListener('click', function (e) {
-            e.preventDefault();
-            if (nav.classList.contains('main-nav--closed')) {
-                nav.classList.add('main-nav--opened');
-                nav.classList.remove('main-nav--closed')
-            } else {
-                nav.classList.add('main-nav--closed')
-                nav.classList.remove('main-nav--opened');
-
-            }
-        });
-
-        var subscribtionsItem1 = document.getElementById('subscribtionsItem1');
-        var subscribtionsItem2 = document.getElementById('subscribtionsItem2');
-        var subscribtionsItem3 = document.getElementById('subscribtionsItem3');
-
-
-        subscribtionsItem1.addEventListener('click', function() {
-            subscribtionsItem1.classList.add('subscribtions__item--active');
-            subscribtionsItem2.classList.remove('subscribtions__item--active');
-            subscribtionsItem3.classList.remove('subscribtions__item--active');
-        });
-
-
-        subscribtionsItem2.addEventListener('click', function() {
-            subscribtionsItem1.classList.remove('subscribtions__item--active');
-            subscribtionsItem2.classList.add('subscribtions__item--active');
-            subscribtionsItem3.classList.remove('subscribtions__item--active');
-        });
-
-
-        subscribtionsItem3.addEventListener('click', function() {
-            subscribtionsItem1.classList.remove('subscribtions__item--active');
-            subscribtionsItem2.classList.remove('subscribtions__item--active');
-            subscribtionsItem3.classList.add('subscribtions__item--active');
-        })
-
-
-    </script>
+    <script src="js/navMenu.js"></script>
+    <script src="js/subscribtionsToggler.js"></script>
 </body>
 
 </html>
